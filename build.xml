@@ -2,7 +2,7 @@
   <project name="ActionTestDemo" default="run" basedir=".">
   <property name="src" value="src"/>
   <property name="dest" value="classes"/>
-  <property name="helloaction_jar" value="helloaction.jar"/>
+  <property name="helloaction_jar" value="build/jar/helloaction.jar"/>
   <target name="init">
      <mkdir dir="${dest}"/>
   </target>
