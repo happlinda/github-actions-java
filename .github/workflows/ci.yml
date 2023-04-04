@@ -1,5 +1,13 @@
 name: Java CI test
-on: [push]
+on:
+  push:
+    branches:
+      - main   
+  # Enable manual execute
+  workflow_dispatch:
+  # Execute every 24 hours
+  schedule: 
+    - cron: '0 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
