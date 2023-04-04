@@ -10,7 +10,7 @@
     <javac srcdir="${src}" destdir="${dest}"/>
  </target>
  <target name="build" depends="compile">
-    <jar jarfile="${helloaction_jar}" basedir="${dest}"/>
+    <jar jarfile="build/${helloaction_jar}" basedir="${dest}"/>
  </target>
  <target name="run" depends="build">
     <java classname="com.linda.actions.test.HelloAction" classpath="${helloaction_jar}"/>
