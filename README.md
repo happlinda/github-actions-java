@@ -1,2 +1,2 @@
 This is test project
-test1
+study actions
