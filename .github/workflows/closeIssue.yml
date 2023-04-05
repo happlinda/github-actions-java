@@ -22,5 +22,6 @@ jobs:
         with:
           issue-number: ${{ steps.Closer.outputs.issueNumber }}
           comment: The associated PR has been merged, this issue is automatically closed, you can reopend if necessary.
+        env:
           Github_Token: ${{ secrets.ACCESS_TOKEN }}
           PRNUM: ${{ github.event.pull_request.number }}
